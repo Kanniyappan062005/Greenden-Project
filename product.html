@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+
+    <div class="p-3 bg-green-100 flex items-center justify-between shadow-xl sticky top-0 z-10">
+
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 w-7 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="product.html">Products</a></li>
+            <li><a class="hover:underline" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Product Section -->
+
+    <section class="m-6 text-center">
+
+        <div class="">
+            <h1 class="text-3xl font-bold mt-10 mb-5">Our Products</h1>
+            <input type="text" placeholder="Search for a Product..." class="border border-black p-3" style="width: 80%;">
+        </div>
+
+        <!-- Product Container -->
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 justify-between m-6">
+            <div class="text-center">
+                <img src="./images/Bestseller_1_Rose.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">Rose Plant</p>
+                <p class="">$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/Bestseller_2_Lily.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">Lily Plant</p>
+                <p class="">$40</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/Bestseller_3_Artificial flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">Artificial Plant</p>
+                <p class="">$30</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/Bestseller_3_white-orchid.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">White Orchid</p>
+                <p class="">$50</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/Bestseller_5_ Yellow flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">Yellow Flower</p>
+                <p class="">$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/Bestseller_6_Mari gold flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">Mari Gold Flower</p>
+                <p class="">$30</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/Bestseller_7_Flower near Bolcany.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">Flower Near Balcany</p>
+                <p class="">$25</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/Bestseller_8_Daisy Flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p class="">Daisy Flower</p>
+                <p class="">$40</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class=" bg-green-100 p-6 flex flex-col gap-5">
+        <h1 class=" text-3xl font-bold ">Greenden</h1>
+        <p class="">The Standard chunk used since the 1500"s is rreproduced below for those interest.</p>
+        <p class="mt-3">&copy;2021 Greenden.com</p>
+    </section>
+
+    
+
+</body>
+</html>

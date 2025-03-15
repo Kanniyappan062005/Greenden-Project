@@ -15,7 +15,7 @@
 
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="open-navbar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 w-7 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -28,63 +28,82 @@
         </ul>
     </div>
 
+    <!-- Side-navbar -->
+
+    <ul id="side-navbar" class="flex flex-col gap-10 text-gray-600 bg-green-100 text-center py-20 z-10 fixed top-0 transition-all duration-1000 md:hidden"
+        style="height: 100vh; width: 50%; right: -50%;">
+
+        <div id="close-navbar" style="position: absolute; right: 10px; top: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="w-10">
+                <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+
+        <li><a class="hover:underline" href="index.html">Home</a></li>
+        <li><a class="hover:underline" href="product.html">Products</a></li>
+        <li><a class="hover:underline" href="contact.html">Contact</a></li>
+    </ul>
+
     <!-- Product Section -->
 
     <section class="m-6 text-center">
 
         <div class="">
             <h1 class="text-3xl font-bold mt-10 mb-5">Our Products</h1>
-            <input type="text" placeholder="Search for a Product..." class="border border-black p-3" style="width: 80%;">
+            <input id="search" type="text" placeholder="Search for a Product..." class="border border-black p-3" style="width: 80%;">
         </div>
 
         <!-- Product Container -->
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 justify-between m-6">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 gap-10 justify-between m-6">
             <div class="text-center">
                 <img src="./images/Bestseller_1_Rose.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">Rose Plant</p>
+                <p class="product-name">Rose Plant</p>
                 <p class="">$20</p>
             </div>
 
             <div class="text-center">
                 <img src="./images/Bestseller_2_Lily.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">Lily Plant</p>
+                <p class="product-name">Lily Plant</p>
                 <p class="">$40</p>
             </div>
 
             <div class="text-center">
                 <img src="./images/Bestseller_3_Artificial flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">Artificial Plant</p>
+                <p class="product-name">Artificial Plant</p>
                 <p class="">$30</p>
             </div>
 
             <div class="text-center">
                 <img src="./images/Bestseller_3_white-orchid.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">White Orchid</p>
+                <p class="product-name">White Orchid</p>
                 <p class="">$50</p>
             </div>
 
             <div class="text-center">
                 <img src="./images/Bestseller_5_ Yellow flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">Yellow Flower</p>
+                <p class="product-name">Yellow Flower</p>
                 <p class="">$20</p>
             </div>
 
             <div class="text-center">
                 <img src="./images/Bestseller_6_Mari gold flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">Mari Gold Flower</p>
+                <p class="product-name">Mari Gold Flower</p>
                 <p class="">$30</p>
             </div>
 
             <div class="text-center">
                 <img src="./images/Bestseller_7_Flower near Bolcany.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">Flower Near Balcany</p>
+                <p class="product-name">Flower Near Balcany</p>
                 <p class="">$25</p>
             </div>
 
             <div class="text-center">
                 <img src="./images/Bestseller_8_Daisy Flower pot.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p class="">Daisy Flower</p>
+                <p class="product-name">Daisy Flower</p>
                 <p class="">$40</p>
             </div>
             
@@ -99,6 +118,7 @@
         <p class="mt-3">&copy;2021 Greenden.com</p>
     </section>
 
+    <script src="product.js"></script>
     
 
 </body>
